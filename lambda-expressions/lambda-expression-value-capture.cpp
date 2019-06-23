@@ -27,6 +27,7 @@ int main()
 		printf("lambda thread : x = %d\n", x);
 		auto answer = long_computation(x, 6, 'l');
 		printf("\nlambda thread : long computation completed\n");
+		printf("lambda thread : x = %d\n", x);
 		return answer; });
 
   // At this point main thread and lambda thread
